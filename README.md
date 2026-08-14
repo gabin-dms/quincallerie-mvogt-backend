@@ -28,7 +28,7 @@ Creer un service a partir de ce repo GitHub (New → GitHub Repo). Dans l'onglet
 | `DB_NAME` | `${{MySQL.MYSQLDATABASE}}` |
 | `JWT_SECRET` | chaine aleatoire longue (ex. `openssl rand -base64 48`) |
 | `JWT_EXPIRATION_MS` | `28800000` (8h) ou autre |
-| `CORS_ALLOWED_ORIGINS` | URL(s) du frontend Angular deploye, separees par des virgules |
+| `CORS_ALLOWED_ORIGINS` | `https://qmvogt.dmsacad.com` (separer par des virgules si plusieurs origines) |
 
 Ne pas definir `PORT` : Railway l'injecte automatiquement au conteneur, et
 `application.properties` le lit deja (`server.port=${PORT:${SERVER_PORT:8080}}`).
